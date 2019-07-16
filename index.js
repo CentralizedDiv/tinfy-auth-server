@@ -20,7 +20,7 @@ var cookieParser = require('cookie-parser');
 
 var client_id = 'c0c8a75b4d7c480c9db779bbdd0ffdbd'; // Your client id
 var client_secret = '68a62728299e404a9b6822c023a4e1fa'; // Your secret
-var redirect_uri = 'http://localhost:' + port + '/callback'; // Your redirect uri
+var redirect_uri = 'https://agile-ravine-74491.herokuapp.com/callback'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
