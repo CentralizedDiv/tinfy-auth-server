@@ -72,7 +72,7 @@ app.get('/callback', function (req, res) {
   var storedState = req.cookies ? req.cookies[stateKey] : null;
 
   if (state === null || state !== storedState) {
-    res.redirect('tinfy.xyz/' +
+    res.redirect('http://www.tinfy.xyz/' +
       querystring.stringify({
         error: 'state_mismatch'
       }));
@@ -104,14 +104,14 @@ app.get('/callback', function (req, res) {
         };
 
         // we can also pass the token to the browser to make requests from there
-        res.redirect('tinfy.xyz/' +
+        res.redirect('http://www.tinfy.xyz/' +
           querystring.stringify({
             access_token: access_token,
             refresh_token: refresh_token
           }));
 
       } else {
-        res.redirect('tinfy.xyz/' +
+        res.redirect('http://www.tinfy.xyz/' +
           querystring.stringify({
             error: 'invalid_token'
           }));
